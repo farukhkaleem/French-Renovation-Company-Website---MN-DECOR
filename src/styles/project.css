@@ -1,0 +1,60 @@
+.project-content {
+  padding: 30px 0;
+  background: var(--bg-color);
+}
+
+.project-custom-title {
+  color: var(--dark);
+  margin-bottom: 15px;
+  font-size: 32px;
+}
+
+.project-subtitle {
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.project-text {
+  line-height: 1.8;
+  color: var(--text);
+}
+
+/* Lists styling */
+.project-text ul {
+  padding-left: 18px;
+  margin: 15px 0;
+}
+
+.project-text li {
+  margin-bottom: 8px;
+}
+
+/* Image */
+.project-content-image {
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  transition:
+    transform 0.7s cubic-bezier(.2,.8,.2,1),
+    filter 0.4s ease;
+}
+
+.project-conclusion {
+  padding: 30px 0 90px 0;
+}
+
+.conclusion-image {
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  transition:
+    transform 0.7s cubic-bezier(.2,.8,.2,1),
+    filter 0.4s ease;
+}
+
+.project-content-image:hover,
+.conclusion-image:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}

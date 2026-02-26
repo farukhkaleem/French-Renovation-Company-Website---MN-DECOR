@@ -1,0 +1,264 @@
+.hero-home {
+  height: 650px;
+  position: relative;
+}
+
+.hero-home-image-container {
+  position: relative;
+  width: 520px;
+}
+
+.hero-home-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+
+.hero-home-image-container p {
+  margin-top: 12px;
+  color: #444;
+  text-align: right;
+  font-weight: 500;
+}
+
+.hero-home-image-container {
+  transform: translateY(130px);
+}
+
+.why-section {
+  background: var(--bg-color);
+}
+
+.why-card {
+  padding: 25px;
+}
+
+.why-icon {
+  font-size: 32px;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.why-card h5 {
+  margin-bottom: 8px;
+}
+
+.why-card p {
+  font-size: 14px;
+}
+
+
+.mission-section {
+  position: relative;
+}
+
+.mission-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.mission-card {
+  background: white;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.mission-list {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.mission-list li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.mission-list li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: var(--accent);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.gallery-desc {
+  max-width: 720px;
+  margin: 10px auto 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.project-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+.project-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  font-weight: 500;
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h5 {
+  margin-bottom: 6px;
+}
+
+.testimonial-intro {
+  margin-top: 10px;
+  max-width: 320px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.testimonial-item {
+  background: #fff;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  padding: 22px;
+  border-radius: 6px;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.cert-section {
+  padding: 50px 0;
+}
+
+.cert-title {
+  margin-bottom: 30px;
+}
+
+.cert-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cert-logos img {
+  height: 120px;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.cert-logos img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
